@@ -11,7 +11,7 @@ function App() {
   }, []);
   return (
     <div className='App'>
-      <h2>{data}</h2>
+      <h2>shalom</h2>
       <h2>{data}</h2>
     </div>
   );
