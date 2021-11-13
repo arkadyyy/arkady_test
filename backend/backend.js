@@ -2,14 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-app.use(
-  cors({
-    origin: true,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    credentials: true,
-    exposedHeaders: ["x-auth-token"],
-  })
-);
+app.use(cors());
 
 // Add headers before the routes are defined
 // app.use(function (req, res, next) {
