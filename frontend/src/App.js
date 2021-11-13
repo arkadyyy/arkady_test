@@ -8,9 +8,11 @@ function App() {
   const [data2, setdata2] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:9999/").then((res) => setdata(res.data));
     axios
-      .get("http://localhost:9999/api/test")
+      .get("http://ec2-54-174-32-61.compute-1.amazonaws.com:9999/")
+      .then((res) => setdata(res.data));
+    axios
+      .get("http://ec2-54-174-32-61.compute-1.amazonaws.com:9999/api/test")
       .then((res) => setdata2(res.data));
   }, []);
   return (
