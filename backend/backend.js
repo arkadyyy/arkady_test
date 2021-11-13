@@ -39,6 +39,9 @@ app.use(
 app.get("/", (req, res) => {
   res.status(200).send("hello !");
 });
+app.get("/api/test", (req, res) => {
+  res.status(200).send("test works !");
+});
 
 app.listen(9999, () => {
   console.log("server listening on port 9999");
