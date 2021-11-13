@@ -11,7 +11,7 @@ function App() {
     axios.get("http://localhost:9999/").then((res) => setdata(res.data));
     axios
       .get("http://localhost:9999/api/test")
-      .then((res) => setdata(res.data));
+      .then((res) => setdata2(res.data));
   }, []);
   return (
     <div className='App'>
